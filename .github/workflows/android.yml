@@ -1,4 +1,4 @@
-name: Android CI
+name: Android CI Signed
 
 on:
   push:
@@ -27,20 +27,31 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build Release APK
-        run: ./gradlew assembleRelease
+      - name: Decode Keystore
+        run: echo "${{ secrets.SIGNING_KEYSTORE }}" | base64 --decode > mykey.jks
 
-      - name: Build Release AAB
-        run: ./gradlew bundleRelease
+      - name: Build Signed APK
+        run: ./gradlew assembleRelease \
+              -Pandroid.injected.signing.store.file=mykey.jks \
+              -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} \
+              -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} \
+              -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
 
-      - name: Upload APK Artifact
+      - name: Build Signed AAB
+        run: ./gradlew bundleRelease \
+              -Pandroid.injected.signing.store.file=mykey.jks \
+              -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} \
+              -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} \
+              -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
+
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: unsigned-apk
+          name: signed-apk
           path: app/build/outputs/apk/release/*.apk
 
-      - name: Upload AAB Artifact
+      - name: Upload AAB
         uses: actions/upload-artifact@v4
         with:
-          name: unsigned-aab
+          name: signed-aab
           path: app/build/outputs/bundle/release/*.aab
