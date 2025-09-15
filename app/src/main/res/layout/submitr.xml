@@ -1,0 +1,148 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear3"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#4CAF50"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_arrow_back_white"
+			android:scaleType="center" />
+		<TextView
+			android:id="@+id/textview3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="সাবমিট"
+			android:textSize="16sp"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/background">
+		<LinearLayout
+			android:id="@+id/linear5"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:padding="8dp"
+				android:background="#4CAF50"
+				android:gravity="center_vertical"
+				android:text="বান্দরবান জেলার আশে পাশের আ্যম্বুলেন্স পরিসেবা সমূহ"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF"
+				android:layout_gravity="center_horizontal|center_vertical" />
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical">
+				<CheckBox
+					android:id="@+id/checkbox8"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম: নির্ভয় ব্লাড ডোনার গ্রুপ\nমোবাইল নাম্বার: 01310791575"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<CheckBox
+					android:id="@+id/checkbox1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম: বান্দরবান ইয়ুথ ব্লাড ডোনার গ্রুপ\nমোবাইল নাম্বার: 01586133222"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<CheckBox
+					android:id="@+id/checkbox2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম: মানবিক ব্লাড ডোনার গ্রুপ বান্দরবান \nমোবাইল নাম্বার :  01818035094"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<CheckBox
+					android:id="@+id/checkbox3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম : জনতা ব্লাড ডোনার সোসাইটি বান্দরবান ইউনিট\nমোবাইল নাম্বার : 01861664688"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<CheckBox
+					android:id="@+id/checkbox4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম : বালাঘাটা ব্লাড ডোনার গ্রুপ\nমোবাইল নাম্বার : 01818447270"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<CheckBox
+					android:id="@+id/checkbox5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম : বান্দরবান ব্লাড ডোনার গ্রুপ\nমোবাইল নাম্বার : 01820433900"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<CheckBox
+					android:id="@+id/checkbox6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নাম : বান্দরবান রেড ক্রিসেন্ট ব্লাড ডোনার ইউনিট\nমোবাইল নাম্বার : 01642752247"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<Button
+				android:id="@+id/button2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:padding="8dp"
+				android:background="#4CAF50"
+				android:text="কল করুন"
+				android:textSize="14sp"
+				android:textColor="#FFFFFF" />
+			<Button
+				android:id="@+id/button3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:padding="8dp"
+				android:background="#4CAF50"
+				android:text="মেসেজ করুন"
+				android:textSize="14sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview4"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:padding="8dp"
+				android:text="TextView"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

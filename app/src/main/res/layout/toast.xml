@@ -1,0 +1,53 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/nav"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="15dp"
+			android:background="#81C784"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:elevation="5dp">
+			<ImageView
+				android:id="@+id/imageview1"
+				android:focusable="false"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:src="@drawable/ic_location_on_white"
+				android:scaleType="centerInside" />
+			<TextView
+				android:id="@+id/textview1"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingTop="8dp"
+				android:paddingRight="16dp"
+				android:paddingBottom="8dp"
+				android:text="Trun on location"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/imageview2"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/icon_switch"
+				android:scaleType="center" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

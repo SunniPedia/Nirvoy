@@ -1,0 +1,277 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/green_2">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="সাইন আপ"
+					android:textSize="50sp"
+					android:textStyle="bold"
+					android:textColor="#4CAF50" />
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="আপনাকে নির্ভয়ে স্বাগতম"
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview1"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginTop="20dp"
+					android:src="@drawable/profile_image"
+					android:layout_gravity="center_horizontal|center_vertical"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+			</LinearLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:startIconDrawable="@drawable/username">
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="আইডি কার্ড বা জন্ম নিবন্ধনের নাম"
+					android:textColorHint="#000000"
+					android:imeOptions="actionNext" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:startIconDrawable="@drawable/email">
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="ইমেইল এড্রেস"
+					android:textColorHint="#000000"
+					android:imeOptions="actionNext" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:endIconMode="password_toggle"
+				app:startIconDrawable="@drawable/password">
+				<EditText
+					android:id="@+id/edittext3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="পাসওয়ার্ড"
+					android:textColorHint="#000000"
+					android:imeOptions="actionNext"
+					android:inputType="textPassword" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:endIconMode="password_toggle"
+				app:startIconDrawable="@drawable/password">
+				<EditText
+					android:id="@+id/edittext6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="মোবাইল নাম্বার"
+					android:textColorHint="#000000"
+					android:imeOptions="actionNext"
+					android:inputType="textPassword" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:endIconMode="password_toggle"
+				app:startIconDrawable="@drawable/password">
+				<EditText
+					android:id="@+id/edittext4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="আইডি কার্ড বা জন্ম নিবন্ধনের নাম্বার"
+					android:textColorHint="#000000"
+					android:imeOptions="actionNext"
+					android:inputType="textPassword" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:startIconDrawable="@drawable/username">
+				<EditText
+					android:id="@+id/edittext8"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="স্থায়ী ঠিকানা"
+					android:textColorHint="#000000"
+					android:imeOptions="actionNext" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="20dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:startIconDrawable="@drawable/username">
+				<EditText
+					android:id="@+id/edittext7"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="জন্ম তারিখ"
+					android:textColorHint="#000000"
+					android:imeOptions="actionGo" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:paddingLeft="30dp"
+				android:paddingRight="30dp"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/button1"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:text="সাইন আপ"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="#4CAF50" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="আপনার কি ইত্যিমধ্যেই একাউন্ট আছে\?"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="লগ ইন"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="wrap_content"
+				android:layout_height="200dp"
+				android:padding="8dp"
+				android:orientation="vertical" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

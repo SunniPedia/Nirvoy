@@ -1,0 +1,232 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear3"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#4CAF50"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_arrow_back_white"
+			android:scaleType="center" />
+		<TextView
+			android:id="@+id/textview3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="জরুরি অ্যাম্বুলেন্স সেবা"
+			android:textSize="16sp"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/background"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="@android:color/transparent"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:padding="8dp"
+				android:background="#4CAF50"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="শিশুশ্রম বন্ধ করতে পদক্ষেপ নিন। "
+				android:textSize="16sp"
+				android:textColor="#FFFFFF"
+				android:layout_gravity="center_horizontal|center_vertical" />
+			<LinearLayout
+				android:id="@+id/r1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFFFFF"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:hint="রোগীর নাম"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/r3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFFFFF"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:hint="বর্তমান ঠিকানা"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/r2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/problem"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFFFFF"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:hint="রোগীর সমস্যা"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/gotoo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFFFFF"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:hint="গন্তব্য"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dob_field"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/dob_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:background="@android:color/transparent"
+					android:text="তারিখ ও সময়"
+					android:textSize="14sp"
+					android:textColor="#607D8B" />
+				<LinearLayout
+					android:id="@+id/dob_wrapper"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/date_field"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical"
+						android:layout_weight="1">
+						<EditText
+							android:id="@+id/edittext1"
+							android:gravity="center_horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:hint="তারিখ লিখুন"
+							android:textColorHint="#607D8B" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/month_field"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical"
+						android:layout_weight="1">
+						<EditText
+							android:id="@+id/edittext2"
+							android:gravity="center_horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:hint="সময় লিখুন"
+							android:textColorHint="#607D8B" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFFFFF"
+					android:gravity="top"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:hint="মোবাইল নাম্বার"
+					android:textColorHint="#607D8B"
+					android:inputType="phone"
+					android:imeOptions="actionDone" />
+			</LinearLayout>
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:background="#4CAF50"
+				android:text="জমা দিন"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF"
+				android:layout_gravity="right" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+	<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+		<!-- Primary colors -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorControlHighlight">@color/colorControlHighlight</item>
+		<item name="colorControlNormal">@color/colorControlNormal</item>
+
+		<!-- Font -->
+		<item name="android:fontFamily">@font/font</item>
+	</style>
+
+	<style name="AppTheme.FullScreen" parent="AppTheme">
+		<!-- Fullscreen related attributes -->
+		<item name="android:fontFamily">@font/font</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+</resources>

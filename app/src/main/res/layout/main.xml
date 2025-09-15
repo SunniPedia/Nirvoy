@@ -1,0 +1,253 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/pl"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_gravity="center_horizontal|center_vertical">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="250dp"
+			android:layout_height="150dp"
+			android:src="@drawable/default_image"
+			android:scaleType="fitCenter"
+			android:layout_weight="9" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal|center_vertical">
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:text="ইসলামী বিশ্বকোষ চালু হচ্ছে"
+				android:textSize="18sp"
+				android:textColor="#4CAF50" />
+			<ProgressBar
+				android:id="@+id/progressbar1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:progress="10"
+				android:max="80"
+				android:indeterminate="true"
+				style="?android:progressBarStyleHorizontal"
+				android:layout_gravity="center_horizontal|center_vertical" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="#4CAF50"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:layout_weight="1" />
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="3dp"
+			android:background="#FFFFFF"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/circleimageview1"
+				android:layout_width="90dp"
+				android:layout_height="90dp"
+				android:background="@android:color/transparent"
+				android:src="@drawable/nirvou"
+				app:civ_border_width="3dp"
+				app:civ_border_color="#4CAF50"
+				app:civ_circle_background_color="#FFFFFF"
+				app:civ_border_overlay="true" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:layout_weight="1" />
+		<TextView
+			android:id="@+id/textview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Supported by : "
+			android:textSize="18sp"
+			android:textColor="#FFFFFF" />
+		<TextView
+			android:id="@+id/text_debug"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="12sp"
+			android:textColor="#000000" />
+		<LinearLayout
+			android:id="@+id/box1"
+			android:layout_width="250dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="50dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/imageview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/default_image"
+				android:scaleType="center" />
+			<ImageView
+				android:id="@+id/imageview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/default_image"
+				android:scaleType="center" />
+			<ImageView
+				android:id="@+id/imageview4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/default_image"
+				android:scaleType="center" />
+			<ImageView
+				android:id="@+id/imageview5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/default_image"
+				android:scaleType="center" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear6"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#4CAF50"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:layout_weight="1">
+		<de.hdodenhof.circleimageview.CircleImageView
+			android:id="@+id/circleimageview9"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:src="@drawable/nirvoy01"
+			app:civ_border_width="3dp"
+			app:civ_border_color="#4CAF50"
+			app:civ_circle_background_color="#4CAF50"
+			app:civ_border_overlay="true" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear9"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#4CAF50"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/textview2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:textStyle="bold"
+			android:text="নির্ভয় - The Protector"
+			android:textSize="20sp"
+			android:textColor="#FFFFFF" />
+		<LinearLayout
+			android:id="@+id/box"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="50dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal|center_vertical">
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:visibility="gone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="center_horizontal|center_vertical">
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview4"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/support_1"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview2"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/ict"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview8"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/gausiys"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview3"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/yes"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview5"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/support_2"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

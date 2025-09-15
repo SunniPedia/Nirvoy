@@ -1,0 +1,47 @@
+plugins {
+	id 'com.android.application'
+}
+
+android {
+	compileSdkVersion 36
+	
+	defaultConfig {
+		applicationId "com.srizwan01.nirvoy11"
+		namespace "com.srizwan01.nirvoy11"
+		minSdkVersion 23
+		targetSdkVersion 36
+		versionCode 3
+		versionName "3.0 srizwan"
+	}
+	
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_17
+		targetCompatibility JavaVersion.VERSION_17
+	}
+	buildToolsVersion '35.0.0'
+}
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'androidx.appcompat:appcompat:1.7.1'
+	implementation 'com.google.android.material:material:1.12.0'
+	implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+	// AdMob SDK
+	implementation 'com.google.android.gms:play-services-ads:24.5.0'
+	implementation 'com.google.firebase:firebase-auth:24.0.1'
+	implementation 'com.google.firebase:firebase-database:22.0.0'
+	implementation 'com.google.firebase:firebase-storage:22.0.0'
+	implementation 'com.github.bumptech.glide:glide:4.16.0'
+	implementation 'com.google.code.gson:gson:2.13.1'
+	implementation 'com.squareup.okhttp3:okhttp:5.1.0'
+	implementation 'de.hdodenhof:circleimageview:3.1.0'
+	implementation 'androidx.activity:activity:1.10.1'
+	implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+}

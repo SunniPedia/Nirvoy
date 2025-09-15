@@ -1,0 +1,407 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#C8E6C9">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="300dp"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#C8E6C9"
+			android:gravity="right|center_vertical"
+			android:orientation="vertical"
+			android:layout_gravity="left|center_vertical">
+			<LinearLayout
+				android:id="@+id/linear_1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/setting_3"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="প্রোফাইল"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview3"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/courses"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="নির্ভয় কী ও কেন\?"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_5"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview5"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/setting_2"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="নোটিফিকেশন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear15"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:padding="8dp"
+				android:background="#E0E0E0"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear_6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview6"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/setting_4"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="আমাদের টিমে যুক্ত হোন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview9"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/message"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="যোগাযোগ করুন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear16"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:padding="8dp"
+				android:background="#E0E0E0"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/about_us"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview13"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/about_us"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/about_us2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="আমাদের সম্পর্কে জানুন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_2"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview2"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/like"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="ডোনেট করুন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview10"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/ic_favorite_outline_black"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_7"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="রেটিং দাও"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/share"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview12"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/ic_share_black"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_0"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="শেয়ার করুন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/emergency1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview14"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/sos"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview2_0"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="জরুরি ফ্লোটিং বাটন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/emergency2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview15"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/sos"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview3_0"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="জরুরি ভলিউম বাটন"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/setting"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview16"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/setting_1"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview4_0"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="সেটিংস"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/policy"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview17"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/courses"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="Privacy Policy"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:background="?selectableItemBackground">
+				<ImageView
+					android:id="@+id/imageview11"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/setting_8"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview1_8"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:padding="8dp"
+					android:text="Log out"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

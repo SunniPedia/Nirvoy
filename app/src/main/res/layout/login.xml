@@ -1,0 +1,151 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/green_2"
+			android:gravity="bottom"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="লগ ইন"
+					android:textSize="50sp"
+					android:textStyle="bold"
+					android:textColor="#4CAF50" />
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="100dp"
+					android:padding="8dp"
+					android:text="আপনাকে নির্ভয়ে স্বাগতম"
+					android:textSize="16sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:startIconDrawable="@drawable/email">
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="E-mail address"
+					android:textColorHint="#000000" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="8dp"
+				android:padding="4dp"
+				android:orientation="vertical"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:endIconMode="password_toggle"
+				app:startIconDrawable="@drawable/password">
+				<EditText
+					android:id="@+id/edittext3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="Password"
+					android:textColorHint="#000000"
+					android:inputType="textPassword" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<TextView
+				android:id="@+id/textview5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="100dp"
+				android:padding="8dp"
+				android:text="পাসওয়ার্ড ভুলে গেছেন\?"
+				android:textSize="16sp"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:paddingLeft="30dp"
+				android:paddingRight="30dp"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/button1"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:background="#C8E6C9"
+					android:text="Log in"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="#4CAF50" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginBottom="30dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|top"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="নতুন ইউজার\?"
+					android:textSize="14sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="একাউন্ট খুলুন"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
