@@ -5,6 +5,7 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -23,22 +24,21 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
-      # APK build
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
       - name: Build Release APK
         run: ./gradlew assembleRelease
 
-      # AAB build
       - name: Build Release AAB
         run: ./gradlew bundleRelease
 
-      # Upload APK
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: unsigned-apk
           path: app/build/outputs/apk/release/*.apk
 
-      # Upload AAB
       - name: Upload AAB Artifact
         uses: actions/upload-artifact@v4
         with:
