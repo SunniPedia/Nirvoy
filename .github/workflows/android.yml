@@ -31,18 +31,22 @@ jobs:
         run: echo "${{ secrets.SIGNING_KEYSTORE }}" | base64 --decode > mykey.jks
 
       - name: Build Signed APK
-        run: ./gradlew assembleRelease \
-              -Pandroid.injected.signing.store.file=mykey.jks \
-              -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} \
-              -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} \
-              -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
+        shell: bash
+        run: |
+          ./gradlew assembleRelease \
+            -Pandroid.injected.signing.store.file=mykey.jks \
+            -Pandroid.injected.signing.store.password="${{ secrets.SIGNING_STORE_PASSWORD }}" \
+            -Pandroid.injected.signing.key.alias="${{ secrets.SIGNING_KEY_ALIAS }}" \
+            -Pandroid.injected.signing.key.password="${{ secrets.SIGNING_KEY_PASSWORD }}"
 
       - name: Build Signed AAB
-        run: ./gradlew bundleRelease \
-              -Pandroid.injected.signing.store.file=mykey.jks \
-              -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} \
-              -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} \
-              -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
+        shell: bash
+        run: |
+          ./gradlew bundleRelease \
+            -Pandroid.injected.signing.store.file=mykey.jks \
+            -Pandroid.injected.signing.store.password="${{ secrets.SIGNING_STORE_PASSWORD }}" \
+            -Pandroid.injected.signing.key.alias="${{ secrets.SIGNING_KEY_ALIAS }}" \
+            -Pandroid.injected.signing.key.password="${{ secrets.SIGNING_KEY_PASSWORD }}"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
