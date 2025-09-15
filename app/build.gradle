@@ -13,7 +13,15 @@ android {
 		versionCode 3
 		versionName "3.0 srizwan"
 	}
-	
+	signingConfigs {
+        release {
+            // GitHub Actions workflow থেকে override হবে
+            storeFile file(System.getenv("GITHUB_WORKSPACE") + "/mykey.jks")
+            storePassword project.hasProperty("STORE_PASSWORD") ? project.property("STORE_PASSWORD") : ""
+            keyAlias project.hasProperty("KEY_ALIAS") ? project.property("KEY_ALIAS") : ""
+            keyPassword project.hasProperty("KEY_PASSWORD") ? project.property("KEY_PASSWORD") : ""
+        }
+	}
 	buildTypes {
 		release {
 			minifyEnabled false
@@ -45,3 +53,4 @@ dependencies {
 	implementation 'androidx.activity:activity:1.10.1'
 	implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 }
+
