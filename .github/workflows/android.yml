@@ -46,10 +46,21 @@ jobs:
           name: signed-aab
           path: app/build/outputs/bundle/release/*.aab
 
-      # Optional: Create GitHub Release with artifacts
+      # Step: Create auto tag
+      - name: Create Tag
+        id: tag
+        run: |
+          TAG=v$(date +'%Y%m%d%H%M%S')
+          echo "Created tag $TAG"
+          git tag $TAG
+          git push origin $TAG
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      # Step: Create Release using the auto tag
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.tag.outputs.tag }}
           files: |
             app/build/outputs/apk/release/*.apk
             app/build/outputs/bundle/release/*.aab
