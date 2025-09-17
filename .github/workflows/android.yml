@@ -29,18 +29,10 @@ jobs:
         run: echo "${{ secrets.SIGNING_KEYSTORE }}" | base64 --decode > mykey.jks
 
       - name: Build Signed APK
-        run: ./gradlew assembleRelease \
-          -Pandroid.injected.signing.store.file=mykey.jks \
-          -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} \
-          -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} \
-          -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
+        run: ./gradlew assembleRelease -Pandroid.injected.signing.store.file=mykey.jks -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
 
       - name: Build Signed AAB
-        run: ./gradlew bundleRelease \
-          -Pandroid.injected.signing.store.file=mykey.jks \
-          -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} \
-          -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} \
-          -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
+        run: ./gradlew bundleRelease -Pandroid.injected.signing.store.file=mykey.jks -Pandroid.injected.signing.store.password=${{ secrets.SIGNING_STORE_PASSWORD }} -Pandroid.injected.signing.key.alias=${{ secrets.SIGNING_KEY_ALIAS }} -Pandroid.injected.signing.key.password=${{ secrets.SIGNING_KEY_PASSWORD }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
@@ -53,3 +45,13 @@ jobs:
         with:
           name: signed-aab
           path: app/build/outputs/bundle/release/*.aab
+
+      # Optional: Create GitHub Release with artifacts
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            app/build/outputs/apk/release/*.apk
+            app/build/outputs/bundle/release/*.aab
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
